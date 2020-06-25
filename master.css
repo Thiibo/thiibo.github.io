@@ -4,12 +4,11 @@
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 }
-header {
-  height: 100px;
-  padding: 20px;
-}
+#landing {height: 350px; background-attachment: fixed;}
+header {padding: 20px;}
+nav {display: inline-block;}
 nav ul {
-  display: flex;
+  display: inline-flex;
   list-style: none;
 }
 nav ul li {
@@ -30,3 +29,20 @@ nav ul li::after {
 }
 nav ul li:hover::after {width: 100%;}
 nav ul li.thispage::after {width: 100%; background-color: orange;}
+#logo {
+  display: inline-block;
+  color: #e52e2b;
+  font-weight: bold;
+  float: right;
+  padding: 20px;
+}
+
+#landing h1 {
+  color: orange;
+  font-size: 6rem;
+  font-weight: normal;
+  text-align: center;
+  line-height: 200%;
+}
+
+.container {margin: 0 20%;}
