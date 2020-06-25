@@ -1,0 +1,102 @@
+#landing {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://picsum.photos/id/599/1920/1080");
+  background-attachment: fixed;
+  height: 100vh;
+}
+.brandingdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 150px);
+}
+.branding {
+  display: inline-block;
+  color: #db4846;
+  font-size: 100px;
+  text-shadow: -1px 1px 15px #000000;
+  width: 300px;
+  text-align: center;
+}
+
+#userstyles {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://thiibo.github.io/userstyles/img/bg/dse.png");
+  background-attachment: fixed;
+  background-size: cover;
+  color: orange;
+  height: 100vh;
+}
+#userstyles .center {
+  position: relative;
+  box-sizing: border-box;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#userstyles h2 {
+  margin-left: 60px;
+  font-size: 5rem;
+  float: left;
+  text-shadow: -1px 1px 10px #000000;
+}
+#userstyles h2 span {
+  display: block;
+  opacity: 0;
+  transform: translateX(-300px) translateY(100%);
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+#userstyles h2 span:nth-child(2) {transition-delay: 0.5s;}
+#userstyles h2 span:nth-child(3) {transition-delay: 0.75s;}
+#userstyles h2 span:nth-child(4) {transition-delay: 1s; color: #f77133;}
+#userstyles.scrolledTo h2 span {
+  opacity: 1;
+  transform: translateX(0);
+}
+#bUserstyles {
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  background-color: transparent;
+  border: none;
+  float: right;
+  width: 30%;
+  height: 100%;
+  cursor: pointer;
+}
+#bUserstyles .icon {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 60px;
+  background-color: transparent;
+  width: 4rem;
+  height: 4rem;
+  border-top: 1rem solid rgb(200, 200, 200);
+  border-right: 1rem solid rgb(200, 200, 200);
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in-out;
+}
+#bUserstyles:hover .icon-main {
+  width: 7rem;
+  height: 7rem;
+  border-color: white;
+  border-width: 1.25rem;
+  transform: rotate(45deg);
+  right: 100px;
+}
+#bUserstyles .icon-animation {
+  opacity: 0;
+  border-color: rgb(160, 160, 160);
+  border-width: 0.75rem;
+  right: 60px;
+}
+#bUserstyles:hover .icon-animation {
+  opacity: 1;
+  right: 140px;
+}
+#bUserstyles:hover .icon-animation:last-child {
+  border-width: 0.5rem;
+  border-color: rgb(100, 100, 100);
+  width: 1.25rem;
+  height: 1.25rem;
+  right: 160px;
+}
